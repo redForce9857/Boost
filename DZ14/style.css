@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @media screen and (min-width: 960px) {
+
+} */
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* kalonna 0 */
+
+header{
+    background-color: darkcyan;
+    padding: 20px 0;
+    height: 100px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu .first-item1{
+    position: absolute;
+    left: 0;
+}
+header .menu .first-item2{
+    position: absolute;
+    right: 0;
+}
+header .menu .first-item3{
+    position: absolute;
+    right: 220px;
+}
+
+header .menu a{
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 5px;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 0 10px 5 black;
+}
+
+header .menu a:hover{
+    background-color: tomato;
+    color: black;
+}
+
+
+
+/* .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+    height: 400px;
+    width: 400px;
+
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+} */
+
+
+/* kalonna 1 */
+main{
+    background-color: whitesmoke;
+    padding: 55px 0 80px;
+}
+.tech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.tech img{
+    width: 360px;
+    height: 200px;
+}
+
+.tech .arrow{
+    width: 50px;
+    height: 70px;
+}
+/* kalonna 2 */
+.pic{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pic img{
+    width: 360px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+
+/* kalonna 3 */
+
+.strawhat img{
+    width: 360px;
+    height: 225px;
+}
+
+.strawhat article{
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    padding: 20px 25px 15px 7px;
+    margin-bottom: 30px;
+}
+
+.strawhat article .description{
+    font-size: 16;
+    color: gold;
+    width: 750px;
+    margin: 0 55px;
+}
+
+.strawhat article:nth-child(even) img{
+    order: 1;
+    margin-right: 0px;
+    margin-left: 55px;
+}
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .card{
+    width: 400px;
+    min-height: 425px;
+    background-color: purple;
+    color: wheat;
+    box-shadow: 0 0 10 -1 black;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.cards .card h3{
+    background-color: orange;
+    margin: 0;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.cards .card .description{
+    padding: 35px 40px 0 40px;
+}
+.cards .card .description{
+   margin: 0;
+   line-height: 1.5;
+}
+
+.cards .card button{
+    width: 260px;
+    padding: 14px 0;
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    color: wheat;
+    background: orange;
+    text-transform: uppercase;
+    border: none;
+    margin: auto auto 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10 -1 black;
+}
+
+/* Footer */
+
+
+footer{
+    background: teal;
+    padding: 105px 0 105px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+footer p{
+  margin: 0;
+}
+
+@media (max-width:1200px){
+.tech{
+        display: flex;
+        flex-direction: column;
+    }
+.tech img{
+       max-width:620px;
+       width: 100%;
+       max-height: 315px;
+       height: auto; 
+    }
+.tech .arrow{
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu a{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+}
+
